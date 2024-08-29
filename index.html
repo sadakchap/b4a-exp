@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parse App</title>
+  <script src="https://unpkg.com/parse@5.3.0/dist/parse.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/5.3.0/parse.min.js" integrity="sha512-QGCiLOgmLoZqKI5KiS2R/dZW3uLduSmPSjvzKJYeQTy8h2jnGu7pBs3ZVIr61HO3XlB8V2vE9bxLobJmdl/n1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+<body>
+  <h4 id="appInfo"></h4>
+  <div id="jsKey"></div>
+  <button type="button" onclick="retrieveClasses()">Get Data</button> <br/>
+  <button type="button" onclick="createUser()">Create User</button> <br>
+  <button type="button" onclick="signupUser()">Signup User</button> <br>
+  <button type="button" onclick="loginUser()">LogIn User</button> <br>
+  <button type="button" onclick="getLoggedInUser()">Get Current logged in User</button> <br>
+  <button type="button" onclick="logOutUser()">Logout user</button> <br>
+  <!-- <button type="button" onclick="createEvent()">Create event</button> <br> -->
+  <button type="button" onclick="createEventWithUser()">Create event with last user</button> <br>
+
+  <div style="color: red; position: absolute; bottom: 0%">Note: I assume you have created the schemas</div>
+  <!-- <div>MasterKey - 4NVhCH2h4gIZL8l8tgk9iDLXquXk86XMLfTzzza2</div> -->
+  <script src="app.js"></script>
+</body>
+</html>
